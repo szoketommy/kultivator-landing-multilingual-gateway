@@ -14,7 +14,7 @@ const Index = () => {
             <div className="text-xl font-bold text-kultivator-primary">Kultivátor</div>
             <div className="flex items-center gap-8">
               <LanguageSwitcher />
-              <Button>Sign In</Button>
+              <Button>Join the Waiting List</Button>
             </div>
           </div>
         </nav>
@@ -33,7 +33,7 @@ const Index = () => {
                 Join thousands of farmers who are already using Kultivátor to optimize their operations
               </p>
               <Button size="lg" className="bg-white text-kultivator-primary hover:bg-white/90">
-                Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
+                Join the Waiting List <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </section>
