@@ -3,7 +3,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin, Cloud, ClipboardList, Store, LineChart } from "lucide-react";
 
 const Index = () => {
   return (
@@ -23,6 +23,91 @@ const Index = () => {
           <Hero />
           <Features />
           
+          {/* Tools Section */}
+          <section className="py-24 bg-kultivator-light">
+            <div className="container">
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-kultivator-primary mb-4">
+                  All the tools you need to grow
+                </h2>
+                <p className="text-lg text-gray-600">
+                  We have heard the farmers needs. From seed to sell, we got you covered.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Fields Management */}
+                <div className="p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                  <MapPin className="h-12 w-12 text-kultivator-primary mb-6" />
+                  <h3 className="text-xl font-semibold mb-4 text-kultivator-primary">Fields management</h3>
+                  <p className="text-gray-600">
+                    Add your fields on the map, and gain quick insides for current weather and pending tasks.
+                  </p>
+                </div>
+
+                {/* Weather */}
+                <div className="p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                  <Cloud className="h-12 w-12 text-kultivator-primary mb-6" />
+                  <h3 className="text-xl font-semibold mb-4 text-kultivator-primary">Weather</h3>
+                  <p className="text-gray-600">
+                    We have partnered with worlds leading weather servers to provide you with extremely precise weather information for each of your fields.
+                  </p>
+                </div>
+
+                {/* Scouting and Notes */}
+                <div className="p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                  <ClipboardList className="h-12 w-12 text-kultivator-primary mb-6" />
+                  <h3 className="text-xl font-semibold mb-4 text-kultivator-primary">Scouting and notes</h3>
+                  <p className="text-gray-600">
+                    Monitor your plans and add notes for yourself or to share and get help
+                  </p>
+                </div>
+
+                {/* Store Front */}
+                <div className="p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                  <Store className="h-12 w-12 text-kultivator-primary mb-6" />
+                  <h3 className="text-xl font-semibold mb-4 text-kultivator-primary">Store front</h3>
+                  <p className="text-gray-600">
+                    Estimated 40% of the profit is lost when you sell via big supermarkets and retailers. Change all that by selling and accepting payments online in minutes.
+                  </p>
+                </div>
+
+                {/* Expenses and Income */}
+                <div className="p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                  <LineChart className="h-12 w-12 text-kultivator-primary mb-6" />
+                  <h3 className="text-xl font-semibold mb-4 text-kultivator-primary">Expenses and income</h3>
+                  <p className="text-gray-600">
+                    Track your expenses, and organize them into categories
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Featured Clients Section */}
+          <section className="py-24 bg-white">
+            <div className="container">
+              <h2 className="text-3xl md:text-4xl font-bold text-kultivator-primary text-center mb-16">
+                Featured clients
+              </h2>
+              {/* Placeholder for client logos/testimonials */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="h-24 bg-kultivator-light rounded-lg flex items-center justify-center">
+                  <span className="text-kultivator-primary/50">Client 1</span>
+                </div>
+                <div className="h-24 bg-kultivator-light rounded-lg flex items-center justify-center">
+                  <span className="text-kultivator-primary/50">Client 2</span>
+                </div>
+                <div className="h-24 bg-kultivator-light rounded-lg flex items-center justify-center">
+                  <span className="text-kultivator-primary/50">Client 3</span>
+                </div>
+                <div className="h-24 bg-kultivator-light rounded-lg flex items-center justify-center">
+                  <span className="text-kultivator-primary/50">Client 4</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* CTA Section */}
           <section className="py-24 bg-kultivator-primary">
             <div className="container text-center">
