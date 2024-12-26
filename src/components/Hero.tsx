@@ -10,8 +10,8 @@ export const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-kultivator-primary/90 to-kultivator-primary/70" />
         <img
-          src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449"
-          alt="Farm Technology"
+          src="https://images.unsplash.com/photo-1595056040133-b15049f9c5bb"
+          alt="Modern Greenhouse Technology"
           className="w-full h-full object-cover"
         />
       </div>
